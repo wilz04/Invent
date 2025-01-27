@@ -1,0 +1,25 @@
+<form id="fLogin" name="fLogin">
+	<table class="form" width="200" border="0">
+		<tr>
+			<td colspan="2" bgcolor="#F0F0F0">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">*E-Mail:&nbsp;</td>
+			<td align="right"><input class="textfield" type="text" id="tEMail" name="tEMail"></td>
+		</tr>
+		<tr>
+			<td align="right">*Password:&nbsp;</td>
+			<td align="right"><input class="textfield" type="password" id="tPwd" name="pPwd"></td>
+		</tr>
+		<tr>
+			<td align="right" colspan="2">
+				<input class="button" type="button" id="bEnter" name="bEnter" value="Entrar" onClick="login(document.fLogin.tEMail.value, document.fLogin.tPwd.value);">  
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<a onclick="loadURL('pages/register.htm');">Inscr&iacute;bete aqu&iacute;!</a>
+			</td>
+		</tr>
+	</table>
+</form>

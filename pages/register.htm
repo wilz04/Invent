@@ -1,0 +1,62 @@
+<form id="fRegister" name="fRegister">
+	<table class="form" width="200" border="0">
+		<tr>
+			<td colspan="2" bgcolor="#F0F0F0">&nbsp;
+				
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				*E-Mail:&nbsp;
+			</td>
+			<td align="right">
+				<input class="textfield" type="text" id="tEMail" name="tEMail">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				*Password:&nbsp;
+			</td>
+			<td align="right">
+				<input class="textfield" type="password" id="pPwd" name="pPwd">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				*Nombre:&nbsp;
+			</td>
+			<td align="right">
+				<input class="textfield" type="text" id="tFName" name="tFName">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				*Apellido:&nbsp;
+			</td>
+			<td align="right">
+				<input class="textfield" type="text" id="tSName" name="tSName">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				C&eacute;dula:&nbsp;
+			</td>
+			<td align="right">
+				<input class="textfield" type="text" id="tId" name="tId">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				Tel&eacute;fono:&nbsp;
+			</td>
+			<td align="right">
+				<input class="textfield" type="text" id="tPhone" name="tPhone">
+			</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+				<input class="button" type="button" id="bSend" name="bSend" value="Enviar" onClick="register(document.fRegister.tEMail.value, document.fRegister.pPwd.value, document.fRegister.tFName.value, document.fRegister.tSName.value, document.fRegister.tId.value, document.fRegister.tPhone.value);"> 
+			</td>
+		</tr>
+	</table>
+</form>

@@ -1,0 +1,107 @@
+body {
+	font-size: 10px;
+	font-family: "Verdana";
+	background-color: #FFFFFF;
+}
+
+td {
+	font-size: 10px;
+	font-family: "Verdana";
+	cursor: default;
+}
+
+th {
+	font-size: 10px;
+	font-family: "Verdana";
+	cursor: default;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+	cursor: default;
+}
+
+a:visited {
+	color: #000000;
+	text-decoration: none;
+	cursor: default;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	cursor: default;
+}
+a:active {
+	color: #000000;
+	text-decoration: none;
+	cursor: default;
+}
+
+.textfield {
+	border-right: #919999 1px solid;
+	border-top: #919999 1px solid;
+	border-left: #919999 1px solid;
+	border-bottom: #919999 1px solid;
+	font-size: 10px;
+	font-family: "Verdana"
+}
+
+.button {
+	border-right: #919999 1px solid;
+	border-top: #919999 1px solid;
+	border-left: #919999 1px solid;
+	border-bottom: #919999 1px solid;
+	background-color: #F8F8F8;
+	font-size: 10px;
+	font-family: "Verdana";
+}
+
+caption, .title {
+	font-family: Verdana;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.img {
+	border-right: #A9A1AC 1px solid;
+	border-top: #A9A1AC 1px solid;
+	border-left: #A9A1AC 1px solid;
+	border-bottom: #A9A1AC 1px solid;
+	background-color: #F7F7DF;
+}
+
+p {
+	font-size: 10px;
+	font-family: "Verdana";
+	text-decoration: none;
+	text-transform: none;
+}
+
+.login {
+	border-right: #706673 1px solid;
+	border-top: #706673 1px solid;
+	border-left: #706673 1px solid;
+	border-bottom: #706673 1px solid;
+	background-color: #F7F7DF;
+	position: absolute;
+	list-style-type: none;
+	left: 100px;
+	top: 575px;
+}
+
+.frame {
+	height: 100%;
+	width: 100%;
+}
+
+.form {
+	border: 1px solid #F0F0F0;
+}
+
+fieldset {
+	height: 250px;
+	width: 400px;
+	cursor: default;
+}

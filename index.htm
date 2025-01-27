@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Icon Invent</title>
+		<script language="JavaScript" type="text/javascript" src="scripts/abstract/ajax.js"></script>
+		<script language="JavaScript" type="text/javascript" src="scripts/abstract/menu.js"></script>
+		<script language="JavaScript" type="text/javascript" src="scripts/User.class.js"></script>
+		<script language="JavaScript" type="text/javascript" src="scripts/MyHistory.class.js"></script>
+		<script language="JavaScript" type="text/javascript">
+			<!--
+			var user;
+			var toolbar;
+			var myHistory;
+			
+			function init() {
+				redirect();
+				user = new User();
+				toolbar = new Array();
+				myHistory = new MyHistory("main");
+				getURL("pages/menu.php", "menu");
+				getURL("pages/toolbar.php", "toolbar");
+				loadURL("pages/login.htm");
+			}
+			
+			function redirect() {
+				var url = document.location.toString();
+				if (url.substring(7, 11) != "www.") {
+					url = url.replace("//", "//www.");
+					window.open(url, "_self");
+				}
+			}
+			
+			function register(eMail, pwd, fName, sName, id, phone) {
+				user.register(eMail, pwd, fName, sName, id, phone);
+			}
+			
+			function login(eMail, pwd) {
+				user.login(eMail, pwd);
+			}
+			
+			function editRate(product, op) {
+				if (op) {
+					user.addProduct(product);
+				} else {
+					user.delProduct(product);
+				}
+			}
+			
+			function showRate() {
+				window.open("pages/rate.php?prods="+user.getRate().join(","), "_blank", "width=550, height=400, scrollbars=0, resizable=0, directories=0, location=0, menubar=0, status=0, titlebar=0, toolbar=0");
+			}
+			
+			function loadURL(url) {
+				getURL(url, "main");
+				myHistory.cat(url);
+			}
+			
+			function prev() {
+				myHistory.prev();
+			}
+			
+			function next() {
+				myHistory.next();
+			}
+			-->
+		</script>
+		<link href="icon.css" type="text/css" rel="stylesheet">
+	</head>
+	<body onLoad="init();">
+		<table width="100%" height="100%">
+			<tr>
+				<td width="200" height="50">
+					<form id="fHistory" name="fHistory">
+						<input class="button" type="button" id="bPrev" name="bPrev" value="<" onClick="prev();" />
+						<input class="button" type="button" id="bNxet" name="bNext" value=">" onClick="next();" />
+						<b>&nbsp;Icon Invent</b>
+					</form>
+				</td>
+				<td class="form" width="*" height="50">
+					<table width="100%" height="100%">
+						<tr>
+							<td width="80%" valign="bottom">
+								<div class="frame" id="menu"></div>
+							</td>
+							<td width="*" valign="bottom">
+								<div class="frame" id="name" align="right"></div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="form" width="200" valign="top">
+					<div class="frame" id="toolbar"></div>
+				</td>
+				<td class="form" width="*">
+					<br /><br /><br />
+					<br />
+					<br /><br /><br /><br />
+					<div class="frame" id="main" align="center"></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
